@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>LibroManía</title>
+    <link rel="icon" href="img/book-solid.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+    <h1>LibroManía</h1>
+</header>
+    <nav>    
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="reviews.html">Reseñas</a></li>
+            <li><a href="form.html">Contacto</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav> 
+<body>
+    <div class="formulario">
+        <div class="form-wrapper">
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <form action="https://formspree.io/f/xzzbrbvd" method="POST">
+                <label for="name" class="name">Nombre y Apellido: </label>
+                <input type="text" placeholder="Escriba su nombre completo." required id="name" name="name">
+                <label for="mail" class="mail"> Correo electrónico: </label>
+                <input type="email" placeholder="Escriba su correo." required id="mail" name="mail">
+                <label for="text" class="text">Escriba su mensaje: </label>
+                <textarea name="message" id="message" rows="2" cols="20"></textarea>
+                <button type="submit">Enviar</button>
+            </form> 
+        </div>
+    </div>
+    <footer>
+        <p>Teléfono: +54 9 1123-4567 <br>
+        Correo electrónico: librosmania.ar@gmail.com</p>
+    </footer>    
+</body>
+</html>
