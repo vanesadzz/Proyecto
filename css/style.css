@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Afacad Flux", sans-serif;
+    font-family: "Faculty Glyphic", sans-serif;
     box-sizing: border-box;
 }
 
 header {
-    color: white;
-    background-color: rgb(215, 92, 252);
+    color:black ;
+    background-color:rgb(243, 237, 216);
     font-size: 100%;
     text-align: center;
     padding: 10px;
@@ -31,33 +31,18 @@ main {
 }
 
 /* LISTA DE NAVEGACÍON */
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav li {
-    flex-grow: 1;
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid whitesmoke;
-}
-
-nav a {
-    display: block;
+.nav-link {
     color: black;
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgb(226, 157, 247);
+    background-color: white
 }
 
-nav a:hover {
-    background-color: rgba(215, 92, 252, 0.5);
+.nav-link:hover{
+    color: burlywood ;
 }
 
 /* INICIO */
 .contenido {
-    font-size: 130%;
+    font-size: 110%;
     background-color: rgba(228, 228, 228, 0.6);
     position: relative;
     padding: 40px;
@@ -65,7 +50,6 @@ nav a:hover {
     width: 80%;
     text-align: center;
     z-index: 1;
-    
 }
 
 .contenido:hover {
@@ -76,7 +60,7 @@ nav a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("https://i.pinimg.com/564x/9a/c0/d4/9ac0d432c03fd4524bdb2d6038aa39f2.jpg");
+    background-image: url("https://i.pinimg.com/736x/3c/71/9a/3c719ad1f4f1ed903d7caf941511abea.jpg");
     background-size: cover;
     filter: blur(4px);
     opacity: 0.8;
@@ -84,7 +68,7 @@ nav a:hover {
 } 
 
 /* PRODUCTOS */
-.product-cards {
+/* .product-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
@@ -133,9 +117,27 @@ nav a:hover {
     background-color: rgb(210, 113, 240);
     color: white;
     border-radius: 5px;
+} */
+
+.card-img-top {
+    height: 150px;
+    width: auto; /* Tamaño fijo para las portadas */
+    object-fit: cover; /* Ajuste para mantener la proporción */
 }
+  
+.card-body {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    height: 300px; /* Altura fija para uniformar todas las tarjetas */
+} 
 
 /* RESEÑAS */
+.reviews h2{
+    color: burlywood;
+    font-size: large;
+}
+
 .reviews {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
@@ -148,14 +150,14 @@ nav a:hover {
 .reviews {
     background-color: white;
     padding: 10px;
-    border: 2px solid rgb(223, 183, 235);
+    border: 2px solid black;
     border-radius: 5px;
- 
+    font-size: small;
 }
 
 /* CONTACTO */
 .formulario h2 {
-    color: rgb(215, 92, 252);
+    color: burlywood;
     text-align: center;
     font-size: 22px;
     padding: 10px;
@@ -170,12 +172,10 @@ nav a:hover {
     align-items: center;
     background-color: whitesmoke;
     padding: 10px;
-    border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 15px;
     height: auto;
 } 
-
 
 .form-wrapper {
     background-color: white;
@@ -186,7 +186,6 @@ nav a:hover {
     max-width: 600px;
 }
 
-
 form {
     display: flex;
     flex-direction: column;
@@ -194,37 +193,49 @@ form {
 }
 
 label {
-    font-size: 20px;
-    color: rgb(215, 92, 252); 
-
+    font-size: 15px;
+    color: black; 
 }
+
 input, textarea {
     padding: 10px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 15px;
 }
   
 button {
     padding: 10px 15px;
-    background-color:rgb(215, 92, 252);
-    color: white;
+    background-color:burlywood;
+    color: black;
     border: none;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 15px;
 }
   
 button:hover {
-    background-color: rgba(215, 92, 252, 0.5);
+    background-color: rgba(222, 184, 135, 0.5);
 }
 
 /* FOOTER */
 footer {
-    font-size: 120%;
-    background-color: rgb(215, 92, 252);
-    color: white;
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 90%;
+    background-color: rgb(243, 237, 216);
+    color: black;
+    padding: 5px;
+}
+
+.section-left {
+    text-align: left;
+    max-width: 30%;
+}
+  
+.section-right {
+    text-align: right;
+    max-width: 30%;
 }
 
 /* MEDIA QUERIES */
